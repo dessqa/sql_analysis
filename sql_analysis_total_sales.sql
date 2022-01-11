@@ -27,8 +27,7 @@ left join orders
 on orderdetails.orderNumber = orders.orderNumber;
 
 # Далее посчитаем прибыль/потери по всем статусам
-select 
-		sum(orderdetails.quantityOrdered * orderdetails.priceEach) AS totalPrice,
+select sum(orderdetails.quantityOrdered * orderdetails.priceEach) AS totalPrice,
         orders.status
 from orderdetails
 left join orders
