@@ -52,11 +52,50 @@ desc,
 counts
 desc;
 
-# Далее добавим кол-во товаров в заказах.
-# Сначала общее, потом посчитаем среднее.
+# Поскольку товаров много, посчитаем сначала по линейкам продукта
+# их вклад в общую прибыль.
+drop temporary table  temp_table_name;
+drop temporary table  temp_table_name_1;
 
-select productCode,
-priceEach,
-quantityOrdered * priceEach as total_value
+drop temporary table  temp_table_name_2;
+
+
+CREATE TEMPORARY TABLE temp_table_name_2
+select
+products.productLine,
+sum(orderdetails.quantityOrdered * orderdetails.priceEach) as sum_profit,
+sum(orderdetails.quantityOrdered * orderdetails.priceEach) / (
+
+select sum(orderdetails.quantityOrdered * orderdetails.priceEach)
 from orderdetails
-group by productCode
+
+) * 100 as percent
+from
+products
+left join 
+orderdetails
+on 
+products.productCode = orderdetails.productCode
+group by products.productLine
+order by sum_profit desc;
+
+select *
+from temp_table_name_2;
+
+select s.*,
+       round(coalesce(sum(s.percent) over (order by s.percent desc
+       rows between unbounded preceding and current row), 
+       0)) as total,
+		(case
+		when round(coalesce(sum(s.percent) over (order by s.percent desc
+		rows between unbounded preceding and current row), 
+		0)) <= 80 then "A"
+		when round(coalesce(sum(s.percent) over (order by s.percent desc
+		rows between unbounded preceding and current row), 
+		0)) > 80 and round(coalesce(sum(s.percent) over (order by s.percent desc
+		rows between unbounded preceding and current row), 
+		0)) <= 95 then "B"
+		else
+		"C"
+		end) as cat_ABC
+from temp_table_name_2 s
