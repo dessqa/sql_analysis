@@ -13,7 +13,7 @@
 ![Image alt](https://github.com/dessqa/sql_analysis/blob/volume-of-sales/volume_of_sales/volume_of_sales.png)
 
 ### 2. ABC-анализ
-Цель – выявить долю того или иного продукта в общем объеме продаж.
+Цель – выявить долю того или иного продукта в общем объеме продаж. [SQL запрос](https://github.com/dessqa/sql_analysis/blob/main/abc-analysis/abc-analysis.sql)
 <details><summary>Теория</summary>
 <p>
 
