@@ -25,5 +25,5 @@
 Группа В. Товары, спрос на которые хорош, но выручки на них приходится от 81% до 95% нарастающим итогом;
 Группа С. Товары этой группы имеют долю свыше 96% выручки нарастающим итогом, приносят мало прибыли, являются нерентабельными.
 
-![Image alt](https://github.com/dessqa/sql_analysis/blob/volume-of-sales/volume_of_sales/volume_of_sales.png)
+![Image alt](https://github.com/dessqa/sql_analysis/blob/main/abc-analysis/abc-analysis.png)
 
