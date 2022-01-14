@@ -5,8 +5,6 @@
 
 ![Image alt](https://github.com/dessqa/sql_analysis/raw/main/illustration.png)
 
-<<<<<<< ABC-analys
-<<<<<<< Updated upstream
 ### 1. Посчитаем общий объем выручки по имеющимся заказам.
 Сюда входят все заказы с разными статусами (Shipped, Hold on, etc.)
 Построим график распределения денежных потоков. [SQL запрос](https://github.com/dessqa/sql_analysis/blob/main/volume_of_sales/sql_analysis_total_sales.sql)
