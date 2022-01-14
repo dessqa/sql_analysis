@@ -7,15 +7,11 @@
 
 <<<<<<< ABC-analys
 <<<<<<< Updated upstream
-=======
-=======
->>>>>>> main
 ### 1. Посчитаем общий объем выручки по имеющимся заказам.
 Сюда входят все заказы с разными статусами (Shipped, Hold on, etc.)
 Построим график распределения денежных потоков. [SQL запрос](https://github.com/dessqa/sql_analysis/blob/main/volume_of_sales/sql_analysis_total_sales.sql)
 
 
-<<<<<<< ABC-analys
 ![Image alt](https://github.com/dessqa/sql_analysis/blob/volume-of-sales/volume_of_sales/volume_of_sales.png)
 
 ### 2. ABC-анализ
@@ -30,7 +26,6 @@
 Группа А. Двигатели торговли, занимают долю от 0 до 80% выручки нарастающим итогом;
 Группа В. Товары, спрос на которые хорош, но выручки на них приходится от 81% до 95% нарастающим итогом;
 Группа С. Товары этой группы имеют долю свыше 96% выручки нарастающим итогом, приносят мало прибыли, являются нерентабельными.
->>>>>>> Stashed changes
-=======
+
 ![Image alt](https://github.com/dessqa/sql_analysis/blob/volume-of-sales/volume_of_sales/volume_of_sales.png)
->>>>>>> main
+
