@@ -33,7 +33,7 @@
 
 ![Image alt](https://github.com/dessqa/sql_analysis/blob/main/abc-analysis/abc-analysis.png)
 
-#### Результат
+### Результат
 
 |productLine|sum_profit|percent|total|cat_ABC
 |---|---|---|---|---|
@@ -45,7 +45,7 @@
 |`Ships`|663998.34|6.913631|98|`C`|
 |`Trains`|188532.92|1.963028|100|`C`|
 
-#### Вывод
+### Вывод
 1. Категории `Classic Cars`, `Vintage Cars`, `Motorcycles` продаются лучше и больше приносят прибыли в соответствии с принципом Парето.
 2. На категории `Trucks and Buses`, `Planes` стоит обратить внимание, поскольку спрос на них меньше, однако, прибыль всё таки есть.
 3. От категорий `Ships`, `Trains` следует отказаться, т.к. прибыль минимальна.
