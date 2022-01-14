@@ -1,0 +1,8 @@
+productLine,sum_profit,percent,total,cat_ABC
+"Classic Cars",3853922.49,40.127509,40,A
+"Vintage Cars",1797559.63,18.716409,59,A
+Motorcycles,1121426.12,11.676425,71,A
+"Trucks and Buses",1024113.57,10.663195,81,B
+Planes,954637.54,9.939802,91,B
+Ships,663998.34,6.913631,98,C
+Trains,188532.92,1.963028,100,C
